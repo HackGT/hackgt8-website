@@ -1,0 +1,20 @@
+{
+  "name": "hackgt8-website",
+  "version": "1.0.0",
+  "description": "Aladdin. That's all I'm going to say 🧞",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/HackGT/hackgt8-website.git",
+  "keywords": [],
+  "author": "Elton <eltonp3103@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HackGT/hackgt8-website/issues"
+  },
+  "homepage": "https://github.com/HackGT/hackgt8-website#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
