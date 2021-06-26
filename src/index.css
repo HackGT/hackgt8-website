@@ -1,3 +1,35 @@
+/* Futura font */
+@import url("https://use.typekit.net/djq6mbs.css");
+
+@font-face {
+  font-family: "ServiceStation";
+  src: url("assets/fonts/service-station-display/ServiceStation-Regular.woff")
+    format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ServiceStation";
+  src: url("assets/fonts/service-station-display/ServiceStation-RegularItalic.woff")
+    format("woff");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ServiceStation";
+  src: url("assets/fonts/service-station-display/ServiceStation-Rough.woff")
+    format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ServiceStation";
+  src: url("assets/fonts/service-station-display/ServiceStation-RoughItalic.woff")
+    format("woff");
+  font-style: italic;
+  font-weight: bold;
+}
+
 :root {
   box-sizing: border-box;
 
@@ -11,11 +43,15 @@
   --base-unit-4: calc(4 * var(--base-unit));
   --base-unit-8: calc(8 * var(--base-unit));
   --base-unit-16: calc(16 * var(--base-unit));
+
+  --font-primary: Futura, sans serif;
+  --font-secondary: ServiceStation, sans serif;
 }
 
 body {
   padding: 0px;
   margin: 0px;
+  font-family: var(--font-primary);
   font-size: calc(1.5 * var(--base-unit));
 }
 
@@ -26,6 +62,7 @@ h4,
 h5,
 h6 {
   text-transform: uppercase;
+  font-family: var(--font-secondary);
 }
 
 h1 {
@@ -48,6 +85,7 @@ h6 {
 
 nav {
   background: var(--bg-color-dark);
+  font-family: var(--font-secondary);
 }
 
 nav ul {
