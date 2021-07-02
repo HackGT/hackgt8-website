@@ -53,6 +53,8 @@ body {
   margin: 0px;
   font-family: var(--font-primary);
   font-size: calc(1.5 * var(--base-unit));
+  color: var(--white);
+  background: var(--bg-color-dark);
 }
 
 h1,
