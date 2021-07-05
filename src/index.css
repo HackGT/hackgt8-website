@@ -222,14 +222,11 @@ section.center {
 }
 
 footer {
-  background: var(--bg-color);
   color: var(--white);
-  font-weight: bold;
-}
-
-footer .row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .socials ul {
@@ -237,6 +234,20 @@ footer .socials ul {
   padding: 0px;
   margin: 0px;
   display: flex;
+}
+
+footer .socials li {
+  margin: calc(0.25 * var(--base-unit-1)); 
+  transition: transform 0.1s ease-out;
+}
+
+footer .socials li:hover {
+  transform: scale(1.1);
+}
+
+footer .socials li img {
+  height: calc(1.25 * var(--base-unit-2));
+  width: auto;
 }
 
 .logo {
