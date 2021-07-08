@@ -140,7 +140,8 @@ nav a:visited {
   font-family: var(--font-secondary);
 }
 
-#splash h1, p {
+#splash h1,
+p {
   margin: var(--base-unit-1);
 }
 
@@ -192,7 +193,7 @@ section.center {
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 
   font-family: var(--font-primary);
   color: var(--white);
@@ -221,15 +222,37 @@ section.center {
   display: none;
 }
 
-footer {
-  background: var(--bg-color);
-  color: var(--white);
-  font-weight: bold;
+section#about {
+  color: #2c3d6b;
 }
 
-footer .row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+svg#blob {
+  z-index: -100;
+  position: absolute;
+  top: calc(100vh + 172px);
+  left: 78px;
+}
+
+h2#about-header {
+  font-size: 72px;
+  position: absolute;
+  top: calc(100vh + 220px);
+  left: 440px;
+}
+
+p#about-body {
+  font-size: 20px;
+  position: absolute;
+  top: calc(100vh + 350px);
+  left: 93px;
+}
+
+footer {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .socials ul {
@@ -237,6 +260,20 @@ footer .socials ul {
   padding: 0px;
   margin: 0px;
   display: flex;
+}
+
+footer .socials li {
+  margin: calc(0.25 * var(--base-unit-1));
+  transition: transform 0.1s ease-out;
+}
+
+footer .socials li:hover {
+  transform: scale(1.1);
+}
+
+footer .socials li img {
+  height: calc(1.25 * var(--base-unit-2));
+  width: auto;
 }
 
 .logo {
@@ -315,13 +352,4 @@ footer .socials ul {
 
 .pd-bot-16 {
   padding-bottom: var(--base-unit-16);
-}
-
-/* === delete === */
-.sq {
-  display: block;
-  height: 48px;
-  width: 48px;
-  margin-right: 24px;
-  background: red;
 }
