@@ -66,11 +66,7 @@ h4,
 h5,
 h6 {
   text-transform: uppercase;
-<<<<<<< HEAD
-  color: #fff;
-=======
   font-family: var(--font-secondary);
->>>>>>> f7b3697dd23ebf3dc8c800203cc8988f92061385
 }
 
 h1 {
@@ -91,13 +87,8 @@ h6 {
   font-size: var(--base-unit-1);
 }
 
-<<<<<<< HEAD
-p {
-  color: #fff;
-=======
 section {
   min-height: 100vh;
->>>>>>> f7b3697dd23ebf3dc8c800203cc8988f92061385
 }
 
 nav {
@@ -149,7 +140,8 @@ nav a:visited {
   font-family: var(--font-secondary);
 }
 
-#splash h1, p {
+#splash h1,
+p {
   margin: var(--base-unit-1);
 }
 
@@ -201,7 +193,7 @@ section.center {
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 
   font-family: var(--font-primary);
   color: var(--white);
@@ -230,6 +222,31 @@ section.center {
   display: none;
 }
 
+section#about {
+  color: #2c3d6b;
+}
+
+svg#blob {
+  z-index: -100;
+  position: absolute;
+  top: calc(100vh + 172px);
+  left: 78px;
+}
+
+h2#about-header {
+  font-size: 72px;
+  position: absolute;
+  top: calc(100vh + 220px);
+  left: 440px;
+}
+
+p#about-body {
+  font-size: 20px;
+  position: absolute;
+  top: calc(100vh + 350px);
+  left: 93px;
+}
+
 footer {
   color: var(--white);
   display: flex;
@@ -246,7 +263,7 @@ footer .socials ul {
 }
 
 footer .socials li {
-  margin: calc(0.25 * var(--base-unit-1)); 
+  margin: calc(0.25 * var(--base-unit-1));
   transition: transform 0.1s ease-out;
 }
 
@@ -335,13 +352,4 @@ footer .socials li img {
 
 .pd-bot-16 {
   padding-bottom: var(--base-unit-16);
-}
-
-/* === delete === */
-.sq {
-  display: block;
-  height: 48px;
-  width: 48px;
-  margin-right: 24px;
-  background: red;
 }
