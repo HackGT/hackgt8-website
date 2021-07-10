@@ -50,6 +50,10 @@
   --font-secondary: ServiceStation, sans serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0px;
   margin: 0px;
@@ -99,7 +103,7 @@ nav {
   background: transparent;
   font-family: var(--font-secondary);
   width: 100%;
-  z-index: 1100;
+  z-index: 2500;
 }
 
 nav ul {
@@ -171,7 +175,7 @@ nav .ham-icon-extra.active .ham-icon-bottom {
   stroke-dashoffset: -68px;
 }
 
-#home {
+#home--inner {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
@@ -272,11 +276,11 @@ p {
   font-size: var(--base-unit-4);
 }
 
-#home-scrolljack-container {
+.home-scrolljack-container {
   z-index: 2000;
 }
 
-#home-scrolljack-container--inner {
+.home-scrolljack-container--inner {
   position: sticky;
   top: 0px;
   z-index: 2000;

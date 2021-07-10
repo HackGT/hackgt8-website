@@ -27,7 +27,7 @@ for (const track of tracks) {
 }
 
 const playMovie = () => {
-  const scrollJackContainer = document.getElementById("home-scrolljack-container");
+  const scrollJackContainer = document.querySelector(".home-scrolljack-container");
 
   lax.init();
   lax.addDriver("scrollY", () => window.scrollY);
