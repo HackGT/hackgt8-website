@@ -506,29 +506,70 @@ section.center {
   display: none;
 }
 
-section#about {
+#about {
+  position: relative;
   color: #2c3d6b;
+  background-size: cover;
+  background: url("./assets/about.jpg") no-repeat center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-svg#blob {
-  z-index: -100;
-  position: absolute;
-  top: calc(100vh + 172px);
-  left: 78px;
+#about .blob {
+  overflow: hidden;
 }
 
-h2#about-header {
-  font-size: 72px;
+#about .blob .content {
   position: absolute;
-  top: calc(100vh + 220px);
-  left: 440px;
+  top: 50%;
+  transform: translateY(calc(60px + -50%));
 }
 
-p#about-body {
-  font-size: 20px;
-  position: absolute;
-  top: calc(100vh + 350px);
-  left: 93px;
+#about .blob .content::before {
+  content: "";
+  float: left;
+  height: 500px;
+  width: 500px;
+  shape-outside: polygon(
+    93px 200px,
+    289px 1px,
+    24px 4px,
+    23px 498px,
+    123px 496px,
+    34px 367px,
+    52px 256px
+  );
+  shape-margin: 3%;
+}
+
+#about .blob .content p {
+  width: 1000px;
+}
+
+#about .blob .content p::before {
+  content: "";
+  float: right;
+  height: 500px;
+  width: 500px;
+  shape-outside: polygon(
+    288px 7px,
+    311px 5px,
+    311px 371px,
+    73px 371px,
+    220px 272px,
+    270px 192px,
+    300px 84px
+  );
+  shape-margin: 3%;
+}
+
+#about .blob .content::after {
+}
+
+.show {
+  display: block;
 }
 
 footer {
@@ -579,9 +620,11 @@ footer .socials li img {
   justify-content: flex-end;
 }
 
-.pd-1 {
-  padding: var(--base-unit-1);
-}
+@media (max-width: 850px) {
+  svg#blob {
+    position: relative;
+    transform: translateX(-20%);
+  }
 
   #about .blob .content::before {
     display: none;
@@ -677,6 +720,8 @@ footer .socials li img {
   }
 }
 
-.pd-bot-16 {
-  padding-bottom: var(--base-unit-16);
+@media (max-height: 700px) {
+  #splash {
+    top: 150px;
+  }
 }
