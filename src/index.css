@@ -322,7 +322,7 @@ p {
 #tracks-booths {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, minmax(400px, auto))
+  grid-template-rows: repeat(2, minmax(400px, auto));
 }
 
 #general-track-booth {
@@ -421,6 +421,66 @@ section.center {
   display: none;
 }
 
+#about {
+  color: #2c3d6b;
+  background-size: cover;
+  background: url("./assets/about.jpg") no-repeat center;
+}
+
+#about .blob {
+  position: relative;
+}
+
+#about .blob .content {
+  position: absolute;
+  top: 120px;
+}
+
+#about .blob .content::before {
+  content: "";
+  float: left;
+  height: 500px;
+  width: 500px;
+  shape-outside: polygon(
+    93px 200px,
+    289px 1px,
+    24px 4px,
+    23px 498px,
+    123px 496px,
+    34px 367px,
+    52px 256px
+  );
+  shape-margin: 3%;
+}
+
+#about .blob .content p {
+  width: 1000px;
+}
+
+#about .blob .content p::before {
+  content: "";
+  float: right;
+  height: 500px;
+  width: 500px;
+  shape-outside: polygon(
+    288px 7px,
+    311px 5px,
+    311px 371px,
+    73px 371px,
+    220px 272px,
+    270px 192px,
+    300px 84px
+  );
+  shape-margin: 3%;
+}
+
+#about .blob .content::after {
+}
+
+svg#blob {
+  z-index: -100;
+}
+
 .show {
   display: block;
 }
@@ -478,7 +538,7 @@ footer .socials li img {
     display: flex;
     flex-direction: column;
   }
-  
+
   .track {
     display: block !important;
   }
