@@ -216,7 +216,7 @@ a:hover {
   transition: opacity 0.2s ease-out;
 }
 
-nav:hover {
+#desktop-nav:hover {
   opacity: 1;
 }
 
