@@ -405,6 +405,7 @@ section.center {
   border: none;
   width: 100%;
   z-index: 1000;
+  text-align: left;
 }
 
 .faq .answer {
@@ -415,6 +416,7 @@ section.center {
   padding-top: var(--base-unit-4);
   transform: translateY(calc(-1 * var(--base-unit-2)));
   z-index: 900;
+  text-align: left;
 }
 
 .hide {
@@ -561,6 +563,10 @@ footer .socials li img {
 }
 
 @media (max-width: 700px) {
+  .track-prompt {
+    display: none;
+  }
+
   #tracks-booths {
     display: flex;
     flex-direction: column;
