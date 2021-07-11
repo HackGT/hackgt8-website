@@ -184,6 +184,37 @@ section.center {
   margin: var(--base-unit-4) 25%;
 }
 
+/* IMAGES */
+.lightbulb {
+  position: absolute;
+  transform: translate(-250%, -70%);
+}
+
+.ice-cream {
+  position: absolute;
+  transform: translate(100%, -60%);
+}
+
+.skewers {
+  position: absolute;
+  transform: translate(-250%, 0%);
+}
+
+.apples {
+  position: absolute;
+  transform: translate(100%, 0%);
+}
+
+.light-span {
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+}
+
+#secondLspan {
+  transform: translateY(650px);
+}
+
 .faq {
   width: 100%;
   margin-bottom: var(--base-unit-2);
@@ -292,6 +323,12 @@ footer .socials li img {
 
 .justify-flex-end {
   justify-content: flex-end;
+}
+
+@media only screen and (max-width: 960px) {
+  .lightbulb {
+    display: none;
+  }
 }
 
 .pd-1 {
