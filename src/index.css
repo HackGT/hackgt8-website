@@ -228,23 +228,51 @@ section#about {
 
 svg#blob {
   z-index: -100;
-  position: absolute;
-  top: calc(100vh + 172px);
-  left: 78px;
 }
 
 h2#about-header {
   font-size: 72px;
   position: absolute;
-  top: calc(100vh + 220px);
-  left: 440px;
+  top: calc(100vh + 60px);
+  left: 360px;
 }
 
 p#about-body {
   font-size: 20px;
+  height: 300px;
+  width: 600px;
   position: absolute;
-  top: calc(100vh + 350px);
-  left: 93px;
+  top: calc(100vh + 200px);
+  left: 100px;
+}
+
+#blob1 {
+  height: 727px;
+  width: 424px;
+  background-color: red;
+  float: left;
+  position: absolute;
+  top: calc(100vh);
+  shape-margin: 7%;
+  shape-outside:polygon(423.69px 0.62px, 423.69px 0.00px, 0.00px 0.00px, 0.00px 8.92px, 423.69px 8.92px, 423.69px 8.24px, 265.92px 8.21px, 28.24px 5.98px, 156.24px 3.27px, 423.69px 0.62px);
+  -webkit-shape-outside: polygon(423.69px 0.62px, 423.69px 0.00px, 0.00px 0.00px, 0.00px 8.92px, 423.69px 8.92px, 423.69px 8.24px, 265.92px 8.21px, 28.24px 5.98px, 156.24px 3.27px, 423.69px 0.62px);
+  clip-path: polygon(424px 50px, 424px 0px, 0px 0px, 0px 727px, 424px 727px, 424px 672px, 266px 670px, 28px 488px, 156px 266px, 424px 50px);
+  -webkit-clip-path: polygon(424px 50px, 424px 0px, 0px 0px, 0px 727px, 424px 727px, 424px 672px, 266px 670px, 28px 488px, 156px 266px, 424px 50px);
+}
+
+#blob2 {
+  height: 727px;
+  width: 448.31px;
+  background-color: red;
+  position: absolute;
+  top: calc(100vh);
+  left: 424px;
+  float: right;
+  shape-margin: 7%;
+  shape-outside: polygon(0.0px 0.0px, 0.0px 50.3px, 0.6px 50.3px, 355.9px 207.5px, 362.4px 460.7px, 161.1px 623.1px, 0.0px 671.8px, 0.0px 727.0px, 448.3px 727.0px, 448.3px 0.0px);
+  -webkit-shape-outside: polygon(0.0px 0.0px, 0.0px 50.3px, 0.6px 50.3px, 355.9px 207.5px, 362.4px 460.7px, 161.1px 623.1px, 0.0px 671.8px, 0.0px 727.0px, 448.3px 727.0px, 448.3px 0.0px);
+  clip-path: polygon(0.0px 0.0px, 0.0px 50.3px, 0.6px 50.3px, 355.9px 207.5px, 362.4px 460.7px, 161.1px 623.1px, 0.0px 671.8px, 0.0px 727.0px, 448.3px 727.0px, 448.3px 0.0px);
+  -webkit-clip-path: polygon(0.0px 0.0px, 0.0px 50.3px, 0.6px 50.3px, 355.9px 207.5px, 362.4px 460.7px, 161.1px 623.1px, 0.0px 671.8px, 0.0px 727.0px, 448.3px 727.0px, 448.3px 0.0px);
 }
 
 footer {
