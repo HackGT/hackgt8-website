@@ -1,4 +1,4 @@
 git:
   remote: https://github.com/HackGT/hackgt8-website.git
-  branch: master 
+  branch: main
 target_port: 80
