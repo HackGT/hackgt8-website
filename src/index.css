@@ -112,7 +112,101 @@ a:hover {
   min-height: 100vh;
 }
 
-nav {
+#est-nav__ham svg {
+  position: fixed;
+  z-index: 10001;
+}
+
+#est-nav__ham input {
+  position: fixed;
+  z-index: 10001;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#est-nav__ham input:checked ~ .hamRotate {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #fff;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+#est-nav__ham input:checked ~ .ham1 .top {
+  stroke-dashoffset: -98px;
+}
+#est-nav__ham input:checked ~ .ham1 .bottom {
+  stroke-dashoffset: -138px;
+}
+
+#est-nav__ham input {
+  display: block;
+  width: 80px;
+  height: 80px;
+  position: fixed;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 10005; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+.drawer {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  z-index: 10000;
+
+  background: rgba(244, 232, 192, 0.7);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.mobile-links {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-secondary);
+  font-size: 25px;
+  left: 5px;
+  top: 10%;
+}
+
+#est-nav__ham input:checked ~ .drawer {
+  transform: none;
+}
+
+#desktop-nav {
   position: fixed;
   background: transparent;
   font-family: var(--font-secondary);
@@ -151,48 +245,6 @@ nav a:visited {
 
 nav a:hover {
   color: var(--gold);
-}
-
-nav .ham {
-  display: none;
-}
-
-nav .ham-icon {
-  height: 50px;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  transition: transform 0.1s;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-nav .ham-icon-rotate.active {
-  transform: rotate(45deg);
-}
-
-nav .ham-icon-line {
-  fill: none;
-  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke: #e4e4e4;
-  stroke-width: 5.5;
-  stroke-linecap: round;
-}
-
-nav .ham-icon-extra .ham-icon-top {
-  stroke-dasharray: 40 121;
-}
-
-nav .ham-icon-extra .ham-icon-bottom {
-  stroke-dasharray: 40 121;
-}
-
-nav .ham-icon-extra.active .ham-icon-top {
-  stroke-dashoffset: -68px;
-}
-nav .ham-icon-extra.active .ham-icon-bottom {
-  stroke-dashoffset: -68px;
 }
 
 #home--inner {
@@ -577,13 +629,27 @@ footer .socials li img {
   }
 }
 
+@media (min-width: 601px) {
+  #est-nav__ham {
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
+  .est-nav__display--mobile {
+    transform: translateX(-100%);
+  }
+
   :root {
     --base-unit: 10px;
   }
 
   nav {
     display: none;
+  }
+
+  #est-nav__ham {
+    display: block;
   }
 
   section.center {
