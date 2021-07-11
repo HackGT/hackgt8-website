@@ -94,6 +94,20 @@ h6 {
   font-size: var(--base-unit-1);
 }
 
+a {
+  color: var(--white);
+  font-weight: bold;
+}
+
+a:visited {
+  opacity: 0.8;
+  color: var(--white);
+}
+
+a:hover {
+  color: var(--gold);
+}
+
 .full {
   min-height: 100vh;
 }
@@ -104,6 +118,12 @@ nav {
   font-family: var(--font-secondary);
   width: 100%;
   z-index: 2500;
+  opacity: 0.7;
+  transition: opacity 0.2s ease-out;
+}
+
+nav:hover {
+  opacity: 1;
 }
 
 nav ul {
@@ -299,6 +319,27 @@ p {
   margin-bottom: var(--base-unit-1);
 }
 
+#tracks-booths {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, minmax(400px, auto))
+}
+
+#general-track-booth {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#emerging-track-booth {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.track-showcase {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
 .track h3,
 h4 {
   text-align: center;
@@ -321,6 +362,7 @@ h4 {
 }
 
 a.btn {
+  color: var(--brown);
   text-decoration: none;
 }
 
@@ -389,6 +431,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: var(--base-unit-4);
 }
 
 footer .socials ul {
@@ -430,9 +473,28 @@ footer .socials li img {
   justify-content: flex-end;
 }
 
+@media (max-width: 700px) {
+  #tracks-booths {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .track {
+    display: block !important;
+  }
+}
+
 @media (max-width: 600px) {
+  :root {
+    --base-unit: 10px;
+  }
+
   nav {
     display: none;
+  }
+
+  section.center {
+    margin: var(--base-unit-4) 40px;
   }
 }
 

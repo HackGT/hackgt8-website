@@ -14,6 +14,7 @@ for (const faq of faqs) {
 
 let selectedTrackContent = document.getElementById("general-track-content");
 selectedTrackContent.classList.add("show");
+selectedTrackContent.classList.add("track-showcase");
 const tracks = document.querySelectorAll("img[data-track]");
 
 for (const track of tracks) {
@@ -21,7 +22,9 @@ for (const track of tracks) {
   const content = document.getElementById(`${name}-track-content`);
   track.addEventListener("click", () => {
     selectedTrackContent.classList.remove("show");
+    selectedTrackContent.classList.remove("track-showcase");
     content.classList.add("show");
+    content.classList.add("track-showcase");
     selectedTrackContent = content;
   });
 }
@@ -35,8 +38,8 @@ const playMovie = () => {
   lax.addElements("#splash", {
     scrollY: {
       translateY: [
-        [0, "0.6*screenHeight", "1.6*screenHeight"],
-        [0, "-1*screenWidth/2", "-1*screenWidth"],
+        [0, "1.6*screenHeight"],
+        [0, "-1*screenHeight"],
       ],
     },
   });
@@ -44,8 +47,8 @@ const playMovie = () => {
   lax.addElements("#wood-panel", {
     scrollY: {
       translateY: [
-        [0, "screenHeight", "2*screenHeight"],
-        [0, "-1*screenWidth/2", "-1*screenWidth"],
+        [0, "2*screenHeight"],
+        [0, "-1*screenHeight"],
       ],
       translateX: [[0], ["-elWidth/2"]],
     },
