@@ -311,7 +311,7 @@ p {
 #tracks-booths {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, minmax(400px, auto))
+  grid-template-rows: repeat(2, minmax(400px, auto));
 }
 
 #general-track-booth {
@@ -467,11 +467,10 @@ footer .socials li img {
     display: flex;
     flex-direction: column;
   }
-  
+
   .track {
     display: block !important;
   }
-
 }
 
 @media (min-width: 601px) {
@@ -482,7 +481,7 @@ footer .socials li img {
 
 @media (max-width: 600px) {
   .est-nav__display--mobile {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 
   :root {
@@ -544,11 +543,11 @@ footer .socials li img {
   transform: rotate(180deg);
 }
 .line {
-  fill:none;
+  fill: none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke:#fff;
-  stroke-width:5.5;
-  stroke-linecap:round;
+  stroke: #fff;
+  stroke-width: 5.5;
+  stroke-linecap: round;
 }
 .ham1 .top {
   stroke-dasharray: 40 139;
@@ -563,18 +562,17 @@ footer .socials li img {
   stroke-dashoffset: -138px;
 }
 
-#est-nav__ham input
-{
+#est-nav__ham input {
   display: block;
   width: 80px;
   height: 80px;
   position: fixed;
-  
+
   cursor: pointer;
-  
+
   opacity: 0; /* hide this */
   z-index: 10005; /* and place it over the hamburger */
-  
+
   -webkit-touch-callout: none;
 }
 
@@ -586,16 +584,16 @@ footer .socials li img {
   padding: 50px;
   padding-top: 125px;
   z-index: 10000;
-  
-  background: rgba(66, 84, 135, 0.7);
+
+  background: rgba(252, 218, 172, 0.5);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  
+
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
 .mobile-links {
@@ -608,7 +606,6 @@ footer .socials li img {
   top: 10%;
 }
 
-#est-nav__ham input:checked ~ .drawer
-{
+#est-nav__ham input:checked ~ .drawer {
   transform: none;
 }
