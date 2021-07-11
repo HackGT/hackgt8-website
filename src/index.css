@@ -340,7 +340,7 @@ nav a:hover {
 }
 
 #splash h1,
-p {
+#splash p {
   margin: var(--base-unit-1);
 }
 
@@ -457,6 +457,7 @@ section.center {
   border: none;
   width: 100%;
   z-index: 1000;
+  text-align: left;
 }
 
 .faq .answer {
@@ -467,10 +468,73 @@ section.center {
   padding-top: var(--base-unit-4);
   transform: translateY(calc(-1 * var(--base-unit-2)));
   z-index: 900;
+  text-align: left;
 }
 
 .hide {
   display: none;
+}
+
+#about {
+  position: relative;
+  color: #2c3d6b;
+  background-size: cover;
+  background: url("./assets/about.jpg") no-repeat center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#about .blob {
+  overflow: hidden;
+}
+
+#about .blob .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(calc(60px + -50%));
+}
+
+#about .blob .content::before {
+  content: "";
+  float: left;
+  height: 500px;
+  width: 500px;
+  shape-outside: polygon(
+    93px 200px,
+    289px 1px,
+    24px 4px,
+    23px 498px,
+    123px 496px,
+    34px 367px,
+    52px 256px
+  );
+  shape-margin: 3%;
+}
+
+#about .blob .content p {
+  width: 1000px;
+}
+
+#about .blob .content p::before {
+  content: "";
+  float: right;
+  height: 500px;
+  width: 500px;
+  shape-outside: polygon(
+    288px 7px,
+    311px 5px,
+    311px 371px,
+    73px 371px,
+    220px 272px,
+    270px 192px,
+    300px 84px
+  );
+  shape-margin: 3%;
+}
+
+#about .blob .content::after {
 }
 
 .show {
@@ -525,7 +589,36 @@ footer .socials li img {
   justify-content: flex-end;
 }
 
+@media (max-width: 850px) {
+  svg#blob {
+    position: relative;
+    transform: translateX(-20%);
+  }
+
+  #about .blob .content::before {
+    display: none;
+  }
+
+  #about .blob .content p::before {
+    display: none;
+  }
+
+  #about .blob .content {
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+
+  #about .blob .content p {
+    width: 60vw;
+  }
+}
+
 @media (max-width: 700px) {
+  .track-prompt {
+    display: none;
+  }
+
   #tracks-booths {
     display: flex;
     flex-direction: column;
@@ -561,6 +654,44 @@ footer .socials li img {
 
   section.center {
     margin: var(--base-unit-4) 40px;
+  }
+
+  #tracks img {
+    height: 200px;
+  }
+
+  svg#blob {
+    position: relative;
+    transform: translateX(-25%);
+  }
+
+  #about .blob .content {
+    left: 50%;
+  }
+
+  #about .blob .content p {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 350px) {
+  :root {
+    --base-unit: 8px;
+  }
+
+  .track {
+    margin: var(--base-unit-2);
+  }
+
+  svg#blob {
+    position: relative;
+    transform: translateX(-30%);
+  }
+}
+
+@media (max-height: 700px) {
+  #splash {
+    top: 150px;
   }
 }
 
