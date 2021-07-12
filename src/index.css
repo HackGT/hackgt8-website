@@ -704,6 +704,39 @@ footer .socials li img {
     --base-unit: 10px;
   }
 
+  .light-span {
+    display: none;
+  }
+
+  #apples,
+  #iceCreamTop,
+  #popsicle,
+  #laptop {
+    display: none;
+  }
+
+  #maskTop {
+    transform: translate(-50%, -120%);
+  }
+
+  #maskBottom {
+    transform: translate(-50%, 40%);
+  }
+
+  #iceCreamBottom {
+    transform: translate(-160%, -110%);
+    width: 30%;
+  }
+
+  #sushi {
+    transform: translate(60%, -110%);
+    width: 30%;
+  }
+  
+  #fish {
+    display: none;
+  }
+
   nav {
     display: none;
   }
@@ -722,7 +755,7 @@ footer .socials li img {
 
   svg#blob {
     position: relative;
-    transform: translateX(-25%);
+    transform: translateX(-30%);
   }
 
   #about .blob .content {
