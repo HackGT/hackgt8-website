@@ -375,6 +375,7 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, minmax(400px, auto));
+  justify-items: center;
 }
 
 #general-track-booth {
