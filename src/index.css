@@ -440,24 +440,59 @@ section.center {
 }
 
 /* IMAGES */
-.top-left {
+
+#lightbulb {
   position: absolute;
-  transform: translate(-230%, -70%);
+  top: 490%;
+  left: 15%;
 }
 
-.top-right {
+#icecream-top {
   position: absolute;
-  transform: translate(80%, -60%);
+  top: 490%;
+  right: 14%;
 }
 
-.bottom-left {
+#skewers {
   position: absolute;
-  transform: translate(-230%, 0%);
+  top: 540%;
+  left: 15%;
 }
 
-.bottom-right {
+#apples {
   position: absolute;
-  transform: translate(90%, 0%);
+  top: 535%;
+  right: 15%;
+}
+
+#icecream-bottom {
+  position: absolute;
+  top: 775%;
+  left: 10%;
+}
+
+#sushi {
+  position: absolute;
+  top: 800%;
+  right: 7%;
+}
+
+#fish {
+  position: absolute;
+  top: 870%;
+  right: 8%;
+}
+
+#mask-top {
+  position: absolute;
+  top: 940%;
+  left: 13%;
+}
+
+#mask-bottom {
+  position: absolute;
+  top: 1005%;
+  right: 13%;
 }
 
 .light-span {
@@ -478,39 +513,31 @@ section.center {
   transform: translateY(20%)
 }
 
-
 .lamp {
   position: relative;
   z-index: 0;
-  transform: translate(-65%, 75%);
+  position: absolute;
+  top: -5%;
+  left: -22%;
 }
 
 .lamp-beneath {
   position: relative;
   z-index: 1;
-  transform: translate(0, -400px);
+  padding-bottom: 200px;
+  /* transform: translate(0, -400px); */
 }
 
-#sushi {
-  transform: translate(130%, -60%);
-  /* width: 20%; */
-}
-
-#fish {
-  transform: translate(100%, -50%);
-  z-index: 2;
-}
-
-#mask-top {
-  transform: translate(-270%, -30%);
-}
-
-#mask-bottom {
-  transform: translateX(50%);
+#popsicle {
+  position: absolute;
+  top: -14%;
+  right: -30%;
 }
 
 #laptop {
-  transform: translate(70%, -20%);
+  position: absolute;
+  top: 60%;
+  right: -30%;
 }
 
 .faq {
@@ -668,61 +695,121 @@ footer .socials li img {
 }
 
 @media (max-width: 1335px) {
+  #lightbulb {
+    top: 490%;
+    left: 10%;
+  }
+  
+  #icecream-top {
+    top: 490%;
+    right: 8%;
+  }
+  
+  #skewers {
+    top: 540%;
+    left: 10%;
+  }
+  
+  #apples {
+    top: 535%;
+    right: 8%;
+  }
+  
+  #icecream-bottom {
+    top: 780%;
+    left: 4%;
+  }
+  
   #sushi {
-    transform: translate(100%, -60%);
+    top: 800%;
+    right: 0%;
   }
+  
   #fish {
-    transform: translate(70%, -20%);
+    top: 870%;
+    right: 0%;
   }
-  .top-right {
-    transform: translate(45%, -60%);
+  
+  #mask-bottom {
+    top: 1005%;
+    right: 8%;
   }
-  .bottom-left {
-    transform: translate(-205%, -10%);
+  
+  .lamp {
+    top: -5%;
+    left: -30%;
   }
-  .bottom-right {
-    transform: translate(65%, -20%);
+  
+  #popsicle {
+    top: -14%;
+    right: -36%;
   }
+  
+  #laptop {
+    top: 60%;
+    right: -38%;
+  }  
 }
 
 @media (max-width: 1200px) {
-  .lamp {
-    transform: translate(-35%, 75%);
+  #lightbulb {
+    top: 490%;
+    left: 10%;
   }
-  #skewers {
-    transform: translateX(-220%);
-    width: 20%;
-  }
+  
   #icecream-top {
-    width: 25%;
+    top: 490%;
+    right: 8%;
   }
+  
+  #skewers {
+    top: 540%;
+    left: 10%;
+  }
+  
   #apples {
-    width: 22%;
+    top: 535%;
+    right: 8%;
   }
-  #sushi {
-    width: 20%;
-    transform: translateX(140%);
-  }
-  #fish {
-    width: 20%;
-    transform: translateX(120%);
-  }
+  
   #icecream-bottom {
-    width: 20%;
+    top: 780%;
+    left: 4%;
   }
-  #popsicle {
-    width: 50%;
+  
+  #sushi {
+    top: 800%;
+    right: 0%;
   }
-  #laptop {
-    width: 50%;
+  
+  #fish {
+    top: 870%;
+    right: 0%;
   }
+
   #mask-top {
-    width: 20%;
-    transform: translateX(-220%);
+    top: 942%;
   }
+  
   #mask-bottom {
-    width: 30%;
+    top: 1005%;
+    right: 3%;
   }
+  
+  .lamp {
+    top: -5%;
+    left: -36%;
+  }
+  
+  #popsicle {
+    top: -14%;
+    right: -44%;
+  }
+  
+  #laptop {
+    top: 60%;
+    right: -38%;
+  }  
 }
 
 @media (max-width: 850px) {
@@ -748,57 +835,80 @@ footer .socials li img {
   #about .blob .content p {
     width: 60vw;
   }
-
-  .top-left {
-    position: absolute;
-    transform: translate(-150%, -70%);
-    width: 30%;
-  }
-  
-  .top-right {
-    position: absolute;
-    transform: translate(50%, -60%);
-    width: 30%;
-  }
-  
-  .bottom-left {
-    position: absolute;
-    transform: translate(-155%, -10%);
-    width: 30%;
-  }
-  
-  .bottom-right {
-    position: absolute;
-    transform: translate(70%, -20%);
-    width: 30%;
-  }
   
   .light-span {
     display: none;
   }
 
+  #lightbulb {
+    top: 490%;
+    left: 4%;
+    width: 28%;
+  }
+  
+  #icecream-top {
+    top: 490%;
+    right: 2%;
+    width: 30%;
+  }
+  
+  #skewers {
+    top: 545%;
+    left: 5%;
+    width: 26%;
+  }
+  
+  #apples {
+    top: 544%;
+    right: 2%;
+    width: 26%;
+  }
+  
   #icecream-bottom {
-    transform: translate(-230%, -70%);
+    top: 790%;
+    left: -4%;
+    width: 30%;
   }
-
+  
   #sushi {
-    transform: translate(100%, -90%);
-    width: 25%;
+    top: 790%;
+    right: 0%;
+    width: 28%;
   }
-
+  
   #fish {
-    width: 25%;
-    transform: translateX(100%);
+    top: 890%;
+    right: 0%;
+    width: 28%;
   }
 
   #mask-top {
-    width: 18%;
-    transform: translate(-250%, 20%);
-  }
-
-  #mask-bottom {
+    top: 934%;
+    left: 6%;
     width: 20%;
-    transform: translate(100%, 20%);
+  }
+  
+  #mask-bottom {
+    top: 1005%;
+    right: 3%;
+    width: 22%;
+  }
+  
+  .lamp {
+    top: -5%;
+    left: -36%;
+  }
+  
+  #popsicle {
+    top: -8%;
+    left: -60%;
+    width: 60%;
+  }
+  
+  #laptop {
+    top: 70%;
+    right: -44%;
+    width: 60%;
   }
 
   .lamp {
@@ -808,16 +918,6 @@ footer .socials li img {
   .lamp-beneath {
     z-index: 0;
     transform: translateY(2%);
-  }
-
-  #popsicle {
-    width: 60%;
-    transform: translate(-180%, -90%);
-  }
-
-  #laptop {
-    width: 60%;
-    transform: translate(60%, -70%);
   }
 }
 
@@ -834,8 +934,28 @@ footer .socials li img {
   .track {
     display: block !important;
   }
-  #icecream-bottom {
-    transform: translate(-230%, -110%);
+
+  #skewers,
+  #lightbulb {
+    left: 2%;
+  }
+
+  #icecream-bottom,
+  #sushi {
+    top: 890%;
+  }
+
+  #fish {
+    top: 990%;
+  }
+
+  #mask-top {
+    top: 1034%;
+    width: 16%;
+  }
+
+  #mask-bottom {
+    top: 1125%;
   }
 }
 
@@ -868,22 +988,26 @@ footer .socials li img {
   }
 
   #mask-top {
-    transform: translate(-50%, -120%);
+    top: 940%;
+    left: 35%;
     width: 30%;
   }
 
   #mask-bottom {
-    transform: translate(-50%, 40%);
+    top: 1010%;
+    right: 30%;
     width: 40%;
   }
 
   #icecream-bottom {
-    transform: translate(-160%, -110%);
+    top: 804%;
+    left: 0%;
     width: 30%;
   }
 
   #sushi {
-    transform: translate(60%, -110%);
+    top: 810%;
+    right: 0%;
     width: 30%;
   }
   
