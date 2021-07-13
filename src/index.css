@@ -447,17 +447,17 @@ section.center {
 
 .top-right {
   position: absolute;
-  transform: translate(90%, -60%);
+  transform: translate(80%, -60%);
 }
 
 .bottom-left {
   position: absolute;
-  transform: translate(-250%, 0%);
+  transform: translate(-230%, 0%);
 }
 
 .bottom-right {
   position: absolute;
-  transform: translate(100%, 0%);
+  transform: translate(90%, 0%);
 }
 
 .light-span {
@@ -467,12 +467,17 @@ section.center {
 }
 
 #first-lspan {
-  transform: translateY(-100%)
+  transform: translateY(-80%)
 }
 
 #second-lspan {
-  transform: translateY(-50%)
+  transform: translateY(-30%)
 }
+
+#third-lspan {
+  transform: translateY(20%)
+}
+
 
 .lamp {
   position: relative;
@@ -488,15 +493,22 @@ section.center {
 
 #sushi {
   transform: translate(130%, -60%);
+  width: 20%;
 }
 
 #fish {
   transform: translate(100%, -50%);
+  width: 25%;
   z-index: 2;
 }
 
 #mask-top {
   transform: translate(-270%, -30%);
+}
+
+#mask-bottom {
+  width: 20%;
+  transform: translateX(50%);
 }
 
 #laptop {
@@ -657,6 +669,43 @@ footer .socials li img {
   justify-content: flex-end;
 }
 
+@media (max-width: 1200px) {
+  #skewers {
+    transform: translateX(-220%);
+    width: 20%;
+  }
+  #icecream-top {
+    width: 25%;
+  }
+  #apples {
+    width: 22%;
+  }
+  #sushi {
+    width: 20%;
+    transform: translateX(140%);
+  }
+  #fish {
+    width: 20%;
+    transform: translateX(120%);
+  }
+  #icecream-bottom {
+    width: 20%;
+  }
+  #popsicle {
+    width: 50%;
+  }
+  #laptop {
+    width: 50%;
+  }
+  #mask-top {
+    width: 20%;
+    transform: translateX(-220%);
+  }
+  #mask-bottom {
+    width: 30%;
+  }
+}
+
 @media (max-width: 850px) {
   svg#blob {
     position: relative;
@@ -720,6 +769,7 @@ footer .socials li img {
 
   #fish {
     width: 25%;
+    transform: translateX(100%);
   }
 
   #mask-top {
@@ -729,7 +779,7 @@ footer .socials li img {
 
   #mask-bottom {
     width: 20%;
-    transform: translate(130%, -350%);
+    transform: translate(100%, 20%);
   }
 
   .lamp {
@@ -797,11 +847,12 @@ footer .socials li img {
 
   #mask-top {
     transform: translate(-50%, -120%);
+    width: 30%;
   }
 
   #mask-bottom {
     transform: translate(-50%, 40%);
-    width: 30%;
+    width: 40%;
   }
 
   #icecream-bottom {
