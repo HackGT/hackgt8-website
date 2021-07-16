@@ -340,7 +340,7 @@ nav a:hover {
 }
 
 #splash h1,
-#splash p {
+p {
   margin: var(--base-unit-1);
 }
 
@@ -356,6 +356,10 @@ nav a:hover {
   position: sticky;
   top: 0px;
   z-index: 2000;
+}
+
+#tracks {
+  z-index: 2;
 }
 
 #tracks img {
@@ -436,6 +440,135 @@ section.center {
   margin: var(--base-unit-4) 25%;
 }
 
+#about-more {
+  position: relative;
+}
+
+/* IMAGES */
+
+.top-left {
+  position: absolute;
+  top: 16%;
+  left: -25%;
+  width: 35%;
+}
+
+.top-left img {
+  width: 90%;
+}
+
+.top-right {
+  position: absolute;
+  top: 12%;
+  right: -30%;
+  width: 35%;
+}
+
+.top-right img {
+  width: 90%;
+}
+
+
+.bottom-left {
+  position: absolute;
+  top: 64%;
+  left: -20%;
+  width: 35%;
+}
+
+.bottom-left img {
+  width: 90%;
+}
+
+
+.bottom-right {
+  position: absolute;
+  top: 62%;
+  right: -30%;
+  width: 35%;
+}
+
+.bottom-right img {
+  width: 90%;
+}
+
+#icecream-bottom {
+  top: -15%;
+  left: -25%;
+}
+
+#sushi {
+  top: 10%;
+  right: -40%;
+}
+
+#fish {
+  top: 65%;
+  right: -40%;
+}
+
+#mask-top {
+  top: 15%;
+  left: -20%;
+}
+
+#mask-top img {
+  width: 70%;
+}
+
+#mask-bottom {
+  top: 75%;
+  right: -40%;
+  width: 40%;
+}
+
+#mask-bottom img {
+  width: 70%;
+}
+
+.light-span {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+#first-lspan {
+  transform: translateY(-80%)
+}
+
+#second-lspan {
+  transform: translateY(-30%)
+}
+
+#third-lspan {
+  transform: translateY(50%)
+}
+
+.lamp {
+  position: relative;
+  z-index: 0;
+  position: absolute;
+  top: -5%;
+  left: -22%;
+}
+
+.lamp-beneath {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 200px;
+  /* transform: translate(0, -400px); */
+}
+
+#popsicle {
+  top: -10%;
+  right: -30%;
+}
+
+#laptop {
+  top: 60%;
+  right: -25%;
+}
+
 .faq {
   width: 100%;
   margin-bottom: var(--base-unit-2);
@@ -470,6 +603,10 @@ section.center {
   transform: translateY(calc(-1 * var(--base-unit-2)));
   z-index: 900;
   text-align: left;
+}
+
+#faqs {
+  position: relative;
 }
 
 .hide {
@@ -538,6 +675,10 @@ section.center {
 #about .blob .content::after {
 }
 
+#covid {
+  position: relative;
+}
+
 .show {
   display: block;
 }
@@ -590,6 +731,93 @@ footer .socials li img {
   justify-content: flex-end;
 }
 
+@media only screen and (max-width: 1335px) {
+  .top-left {
+    top: 20%;
+    /* left: -25%; */
+  }
+  
+  .top-right {
+    top: 20%;
+    /* right: -30%; */
+  }
+  
+  .bottom-left {
+    top: 70%;
+    left: -25%;
+  }
+  
+  .bottom-right {
+    top: 70%;
+    right: -30%;
+  }
+
+  #mask-bottom {
+    right: -40%;
+  }
+
+  .lamp {
+    top: -5%;
+    left: -30%;
+  }
+
+  #icecream-bottom {
+    top: -10%;
+  }
+
+  #popsicle {
+    width: 40%;
+  }
+
+  #laptop {
+    width: 40%;
+    right: -33%;
+  }
+   
+}
+
+@media (max-width: 1200px) {
+  
+  .top-left {
+    width: 40%;
+  }
+  .top-right {
+    width: 40%;
+  }
+  .bottom-left img {
+    width: 90%;
+  }
+  .bottom-right img {
+    width: 90%;
+  }
+
+  #sushi {
+    /* top: -5%;
+    right: -50%; */
+  }
+  
+  #sushi img {
+    /* width: 70%; */
+  }
+
+  .lamp {
+    top: -5%;
+    left: -36%;
+  }
+
+  #mask-top {
+    left: -30%;
+  }
+
+  #mask-bottom {
+    right: -44%;
+  }
+  #popsicle {
+    right: -40%;
+  }
+  
+}
+
 @media (max-width: 850px) {
   svg#blob {
     position: relative;
@@ -613,6 +841,147 @@ footer .socials li img {
   #about .blob .content p {
     width: 60vw;
   }
+
+  .top-left {
+    top: 7%;
+    width: 55%;
+    left: -43%;
+  }
+
+  .top-left img {
+    width: 100%;
+  }
+  
+  .top-right {
+    top: 7%;
+    width: 60%;
+    right: -45%;
+  }
+  
+  .bottom-left {
+    top: 75%;
+    width: 47%;
+    left: -40%;
+  }
+  
+  .bottom-right {
+    top: 75%;
+    width: 45%;
+    right: -36%;
+  }
+
+  .bottom-right img {
+    width: 100%;
+  }
+  
+  .light-span {
+    display: none;
+  }
+
+  /* #lightbulb {
+    top: 7%;
+    width: 55%;
+    left: -43%;
+  }
+
+  #lightbulb img {
+    width: 100%;
+  }
+
+  #icecream-top {
+    top: 7%;
+    width: 60%;
+    right: -45%;
+  }
+  
+  #icecream-top img {
+    width: 100%;
+  }
+  
+  #skewers {
+    top: 75%;
+    width: 47%;
+    left: -40%;
+  }
+
+  #apples {
+    top: 75%;
+    width: 45%;
+    right: -36%;
+  }
+  
+  #apples img {
+    width: 100%;
+  } */
+  
+  #icecream-bottom {
+    top: -8%;
+    left: -50%;
+  }
+
+  #icecream-bottom img {
+    width: 90%;
+  }
+  
+  #sushi {
+    top: -2%;
+    right: -40%;
+    width: 46%;
+  }
+
+  #sushi img {
+    width: 100%;
+  }
+
+  #fish {
+    right: -45%;
+    width: 45%;
+  }
+
+  #fish img {
+    width: 100%;
+  }
+
+  #mask-top {
+    top: 4%;
+    left: -37%;
+  }
+
+  #mask-top img {
+    width: 60%;
+  }
+
+  #mask-bottom {
+    width: 44%;
+    right: -44%;
+  }
+  
+  #mask-bottom img {
+    width: 100%;
+  }
+  
+  #popsicle {
+    width: 60%;
+    left: -60%;
+  }
+
+  #popsicle img {
+    width: 100%;
+  }
+
+  #laptop {
+    right: -46%;
+    width: 50%;
+  }
+
+  .lamp {
+    display: none;
+  }
+
+  .lamp-beneath {
+    z-index: 0;
+    transform: translateY(2%);
+  }
 }
 
 @media (max-width: 700px) {
@@ -627,6 +996,31 @@ footer .socials li img {
 
   .track {
     display: block !important;
+  }
+
+  #skewers,
+  #lightbulb {
+    /* left: -40%; */
+  }
+
+  #icecream-bottom,
+  #sushi {
+    top: 0%;
+  }
+
+  #fish {
+    top: 70%;
+  }
+
+  #mask-top {
+    top: 4%;
+    left: -40%;
+    width: 50%;
+  }
+
+  #popsicle {
+    top: 0%;
+    left: -60%;
   }
 }
 
@@ -643,6 +1037,45 @@ footer .socials li img {
 
   :root {
     --base-unit: 10px;
+  }
+
+  .light-span {
+    display: none;
+  }
+
+  #lightbulb,
+  #apples,
+  #skewers,
+  #icecream-top,
+  #popsicle,
+  #laptop {
+    display: none;
+  }
+
+  #mask-top {
+    top: 9%;
+    left: 35%;
+  }
+
+  #mask-bottom {
+    top: 80%;
+    right: 29%;
+  }
+
+  #icecream-bottom {
+    top: -12%;
+    left: -12%;
+    width: 50%;
+  }
+
+  #sushi {
+    top: -3%;
+    right: -6%;
+    width: 36%;
+  }
+  
+  #fish {
+    display: none;
   }
 
   nav {
@@ -663,7 +1096,7 @@ footer .socials li img {
 
   svg#blob {
     position: relative;
-    transform: translateX(-25%);
+    transform: translateX(-30%);
   }
 
   #about .blob .content {
@@ -695,18 +1128,3 @@ footer .socials li img {
     top: 150px;
   }
 }
-
-/* === delete === */
-.sq {
-  display: block;
-  height: 48px;
-  width: 48px;
-  margin-right: 24px;
-  background: red;
-}
-
-/* === TODO === 
-  - media-query height
-  - media-query width
-  - click image border active stuff
-*/
