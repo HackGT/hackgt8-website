@@ -449,25 +449,47 @@ section.center {
 .top-left {
   position: absolute;
   top: 16%;
-  left: -20%;
+  left: -25%;
+  width: 35%;
+}
+
+.top-left img {
+  width: 90%;
 }
 
 .top-right {
   position: absolute;
   top: 12%;
-  right: -10%;
+  right: -30%;
+  width: 35%;
 }
+
+.top-right img {
+  width: 90%;
+}
+
 
 .bottom-left {
   position: absolute;
-  top: 62%;
+  top: 64%;
   left: -20%;
+  width: 35%;
 }
+
+.bottom-left img {
+  width: 90%;
+}
+
 
 .bottom-right {
   position: absolute;
   top: 62%;
-  right: -10%;
+  right: -30%;
+  width: 35%;
+}
+
+.bottom-right img {
+  width: 90%;
 }
 
 #icecream-bottom {
@@ -490,9 +512,18 @@ section.center {
   left: -20%;
 }
 
+#mask-top img {
+  width: 70%;
+}
+
 #mask-bottom {
   top: 75%;
-  right: -20%;
+  right: -40%;
+  width: 40%;
+}
+
+#mask-bottom img {
+  width: 70%;
 }
 
 .light-span {
@@ -700,24 +731,24 @@ footer .socials li img {
   justify-content: flex-end;
 }
 
-@media (max-width: 1335px) {
+@media only screen and (max-width: 1335px) {
   .top-left {
-    top: 10%;
-    left: -25%;
+    top: 20%;
+    /* left: -25%; */
   }
   
   .top-right {
-    top: 10%;
-    right: -30%;
+    top: 20%;
+    /* right: -30%; */
   }
   
   .bottom-left {
-    top: 65%;
+    top: 70%;
     left: -25%;
   }
   
   .bottom-right {
-    top: 65%;
+    top: 70%;
     right: -30%;
   }
 
@@ -731,33 +762,55 @@ footer .socials li img {
   }
 
   #icecream-bottom {
-    left: -35%;
+    top: -10%;
   }
 
-  #sushi,
-  #fish {
-    right: -50%;
+  #popsicle {
+    width: 40%;
   }
 
   #laptop {
-    right: -35%;
+    width: 40%;
+    right: -33%;
   }
    
 }
 
 @media (max-width: 1200px) {
+  
+  .top-left {
+    width: 40%;
+  }
+  .top-right {
+    width: 40%;
+  }
+  .bottom-left img {
+    width: 90%;
+  }
+  .bottom-right img {
+    width: 90%;
+  }
+
   #sushi {
-    top: -5%;
-    right: -50%;
+    /* top: -5%;
+    right: -50%; */
   }
   
   #sushi img {
-    width: 70%;
+    /* width: 70%; */
   }
 
   .lamp {
     top: -5%;
     left: -36%;
+  }
+
+  #mask-top {
+    left: -30%;
+  }
+
+  #mask-bottom {
+    right: -44%;
   }
   #popsicle {
     right: -40%;
@@ -790,31 +843,45 @@ footer .socials li img {
   }
 
   .top-left {
-    top: 10%;
-    left: -40%;
+    top: 7%;
+    width: 55%;
+    left: -43%;
+  }
+
+  .top-left img {
+    width: 100%;
   }
   
   .top-right {
-    top: 10%;
-    right: -60%;
+    top: 7%;
+    width: 60%;
+    right: -45%;
   }
   
   .bottom-left {
-    top: 68%;
+    top: 75%;
+    width: 47%;
     left: -40%;
   }
   
   .bottom-right {
-    top: 68%;
-    right: -60%;
+    top: 75%;
+    width: 45%;
+    right: -36%;
+  }
+
+  .bottom-right img {
+    width: 100%;
   }
   
   .light-span {
     display: none;
   }
 
-  #lightbulb {
+  /* #lightbulb {
+    top: 7%;
     width: 55%;
+    left: -43%;
   }
 
   #lightbulb img {
@@ -822,8 +889,9 @@ footer .socials li img {
   }
 
   #icecream-top {
+    top: 7%;
     width: 60%;
-    right: -40%;
+    right: -45%;
   }
   
   #icecream-top img {
@@ -831,17 +899,20 @@ footer .socials li img {
   }
   
   #skewers {
-    width: 60%;
+    top: 75%;
+    width: 47%;
+    left: -40%;
   }
 
   #apples {
-    width: 60%;
-    right: -44%;
+    top: 75%;
+    width: 45%;
+    right: -36%;
   }
   
   #apples img {
     width: 100%;
-  }
+  } */
   
   #icecream-bottom {
     top: -8%;
@@ -849,7 +920,7 @@ footer .socials li img {
   }
 
   #icecream-bottom img {
-    width: 70%;
+    width: 90%;
   }
   
   #sushi {
@@ -863,8 +934,8 @@ footer .socials li img {
   }
 
   #fish {
-    right: -40%;
-    width: 40%;
+    right: -45%;
+    width: 45%;
   }
 
   #fish img {
@@ -872,7 +943,8 @@ footer .socials li img {
   }
 
   #mask-top {
-    left: -30%;
+    top: 4%;
+    left: -37%;
   }
 
   #mask-top img {
@@ -899,11 +971,7 @@ footer .socials li img {
 
   #laptop {
     right: -46%;
-    width: 60%;
-  }
-
-  #laptop img {
-    width: 100%;
+    width: 50%;
   }
 
   .lamp {
@@ -932,7 +1000,7 @@ footer .socials li img {
 
   #skewers,
   #lightbulb {
-    left: -40%;
+    /* left: -40%; */
   }
 
   #icecream-bottom,
@@ -948,10 +1016,6 @@ footer .socials li img {
     top: 4%;
     left: -40%;
     width: 50%;
-  }
-
-  #mask-bottom {
-    top: 75%;
   }
 
   #popsicle {
@@ -989,20 +1053,18 @@ footer .socials li img {
   }
 
   #mask-top {
-    top: 18%;
-    left: 38%;
-    width: 44%;
+    top: 9%;
+    left: 35%;
   }
 
   #mask-bottom {
-    top: 78%;
-    right: 30%;
-    width: 40%;
+    top: 80%;
+    right: 29%;
   }
 
   #icecream-bottom {
-    top: -8%;
-    left: -8%;
+    top: -12%;
+    left: -12%;
     width: 50%;
   }
 
