@@ -97,6 +97,7 @@ h6 {
 a {
   color: var(--white);
   font-weight: bold;
+  transition: 200ms ease-in-out;
 }
 
 a:visited {
@@ -207,11 +208,12 @@ a:hover {
   top: 0px;
   left: 30px;
   animation: 1.5s cubic-bezier(0.22, 1, 0.36, 1) slidein--top;
+  z-index: 2001;
 }
 
 #mlh-logo-container img {
-  height: 120px;
-  width: 70px;
+  height: 130px;
+  width: 80px;
   padding: 0px;
 }
 
@@ -685,14 +687,6 @@ section.center {
   shape-margin: 3%;
 }
 
-#code-of-conduct a {
-  transition: 200ms ease-in-out;
-}
-
-#code-of-conduct a:hover {
-  color: #fbdaaa;
-}
-
 #about .blob .content::after {
 }
 
@@ -702,6 +696,21 @@ section.center {
 
 .show {
   display: block;
+}
+
+#code-of-conduct {
+  padding-top: 15px;
+}
+
+#code-of-conduct a {
+  font-size: calc(1.1 * var(--base-unit));
+  text-decoration: none;
+  color: var(--gold);
+}
+
+#code-of-conduct a:hover {
+  transform: scale(1.1);
+  color: var(--white);
 }
 
 footer {
