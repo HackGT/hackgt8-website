@@ -202,6 +202,19 @@ a:hover {
   top: 10%;
 }
 
+#mlh-logo-container {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  animation: 1.5s cubic-bezier(0.22, 1, 0.36, 1) slidein--top;
+}
+
+#mlh-logo-container img {
+  height: 120px;
+  width: 70px;
+  padding: 0px;
+}
+
 #est-nav__ham input:checked ~ .drawer {
   transform: none;
 }
@@ -672,6 +685,14 @@ section.center {
   shape-margin: 3%;
 }
 
+#code-of-conduct a {
+  transition: 200ms ease-in-out;
+}
+
+#code-of-conduct a:hover {
+  color: #fbdaaa;
+}
+
 #about .blob .content::after {
 }
 
@@ -1031,6 +1052,10 @@ footer .socials li img {
 }
 
 @media (max-width: 600px) {
+  #mlh-logo-container {
+    display: none;
+  }
+
   .est-nav__display--mobile {
     transform: translateX(-100%);
   }
