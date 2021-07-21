@@ -97,6 +97,7 @@ h6 {
 a {
   color: var(--white);
   font-weight: bold;
+  transition: 200ms ease-in-out;
 }
 
 a:visited {
@@ -200,6 +201,20 @@ a:hover {
   font-size: 25px;
   left: 5px;
   top: 10%;
+}
+
+#mlh-logo-container {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  animation: 1.5s cubic-bezier(0.22, 1, 0.36, 1) slidein--top;
+  z-index: 2001;
+}
+
+#mlh-logo-container img {
+  height: 130px;
+  width: 80px;
+  padding: 0px;
 }
 
 #est-nav__ham input:checked ~ .drawer {
@@ -531,15 +546,15 @@ section.center {
 }
 
 #first-lspan {
-  transform: translateY(-80%);
+  transform: translateY(-80%)
 }
 
 #second-lspan {
-  transform: translateY(-30%);
+  transform: translateY(-30%)
 }
 
 #third-lspan {
-  transform: translateY(50%);
+  transform: translateY(50%)
 }
 
 .lamp {
@@ -681,6 +696,21 @@ section.center {
   display: block;
 }
 
+#code-of-conduct {
+  padding-top: 15px;
+}
+
+#code-of-conduct a {
+  font-size: calc(1.1 * var(--base-unit));
+  text-decoration: none;
+  color: var(--gold);
+}
+
+#code-of-conduct a:hover {
+  transform: scale(1.1);
+  color: var(--white);
+}
+
 footer {
   color: var(--white);
   display: flex;
@@ -734,16 +764,19 @@ footer .socials li img {
     top: 20%;
     /* left: -25%; */
   }
+  
 
   .top-right {
     top: 20%;
     /* right: -30%; */
   }
+  
 
   .bottom-left {
     top: 70%;
     left: -25%;
   }
+  
 
   .bottom-right {
     top: 70%;
@@ -771,6 +804,11 @@ footer .socials li img {
     width: 40%;
     right: -33%;
   }
+   
+}
+
+@media (max-width: 1200px) {
+  
 }
 
 @media (max-width: 1200px) {
@@ -791,7 +829,7 @@ footer .socials li img {
     /* top: -5%;
     right: -50%; */
   }
-
+  
   #sushi img {
     /* width: 70%; */
   }
@@ -811,6 +849,7 @@ footer .socials li img {
   #popsicle {
     right: -40%;
   }
+  
 }
 
 @media (max-width: 850px) {
@@ -846,18 +885,21 @@ footer .socials li img {
   .top-left img {
     width: 100%;
   }
+  
 
   .top-right {
     top: 7%;
     width: 60%;
     right: -45%;
   }
+  
 
   .bottom-left {
     top: 75%;
     width: 47%;
     left: -40%;
   }
+  
 
   .bottom-right {
     top: 75%;
@@ -868,6 +910,7 @@ footer .socials li img {
   .bottom-right img {
     width: 100%;
   }
+  
 
   .light-span {
     display: none;
@@ -908,6 +951,7 @@ footer .socials li img {
   #apples img {
     width: 100%;
   } */
+  
 
   #icecream-bottom {
     top: -8%;
@@ -917,6 +961,7 @@ footer .socials li img {
   #icecream-bottom img {
     width: 90%;
   }
+  
 
   #sushi {
     top: -2%;
@@ -950,11 +995,11 @@ footer .socials li img {
     width: 44%;
     right: -44%;
   }
-
+  
   #mask-bottom img {
     width: 100%;
   }
-
+  
   #popsicle {
     width: 60%;
     left: -60%;
@@ -1026,6 +1071,10 @@ footer .socials li img {
 }
 
 @media (max-width: 600px) {
+  #mlh-logo-container {
+    display: none;
+  }
+
   .est-nav__display--mobile {
     transform: translateX(-100%);
   }
@@ -1068,6 +1117,7 @@ footer .socials li img {
     right: -6%;
     width: 36%;
   }
+  
 
   #fish {
     display: none;
