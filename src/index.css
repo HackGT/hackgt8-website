@@ -515,6 +515,10 @@ section.center {
   right: -40%;
 }
 
+#sushi:hover {
+  cursor: zoom-in;
+}
+
 #fish {
   top: 65%;
   right: -40%;

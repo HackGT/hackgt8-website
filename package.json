@@ -18,6 +18,12 @@
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
-    "lax": "^0.0.40"
-  }
+    "lax": "^0.0.40",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
 }
