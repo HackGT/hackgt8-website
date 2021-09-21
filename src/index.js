@@ -127,6 +127,7 @@ const playMovie = () => {
 };
 
 window.onload = () => {
+  console.log("ipfs bafybeidpyvi2v3qoyg6jas2534hif3yvyhkavuc36utijyloeqoype5zwi")
   playMovie();
 };
 
