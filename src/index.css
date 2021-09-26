@@ -373,6 +373,16 @@ p {
   z-index: 2000;
 }
 
+#logo-group {
+  display: flex;
+  flex-direction: row;
+}
+
+#logo-group img {
+  height: 100px;
+  margin: 0px 20px;
+}
+
 #tracks {
   z-index: 2;
 }
