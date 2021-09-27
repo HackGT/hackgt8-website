@@ -384,6 +384,14 @@ p {
   margin-right: 20px;
 }
 
+#logo-group a:hover {
+  transition: all .25s ease-in-out;
+}
+
+#logo-group a:hover {
+  transform: scale(1.06);
+}
+
 #sponsor-group {
   display: flex;
   flex-direction: column;
