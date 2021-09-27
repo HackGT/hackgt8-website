@@ -377,6 +377,7 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 #logo-group img {
@@ -390,13 +391,6 @@ p {
 
 #logo-group a:hover {
   transform: scale(1.06);
-}
-
-#sponsor-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 50px;
 }
 
 #tracks {
@@ -838,7 +832,6 @@ footer .socials li img {
 }
 
 @media (max-width: 1200px) {
-  
 }
 
 @media (max-width: 1200px) {
@@ -883,6 +876,14 @@ footer .socials li img {
 }
 
 @media (max-width: 850px) {
+  #logo-group {
+    flex-direction: column;
+  }
+
+  #logo-group img {
+    margin: 1em 0;
+  }
+
   svg#blob {
     position: relative;
     transform: translateX(-20%);
