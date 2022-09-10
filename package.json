@@ -4,7 +4,8 @@
   "description": "Aladdin. That's all I'm going to say 🧞",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build src/index.html"
   },
   "repository": "git+https://github.com/HackGT/hackgt8-website.git",
   "keywords": [],
@@ -14,11 +15,9 @@
     "url": "https://github.com/HackGT/hackgt8-website/issues"
   },
   "homepage": "https://github.com/HackGT/hackgt8-website#readme",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.5"
-  },
   "dependencies": {
     "lax": "^0.0.40",
+    "parcel-bundler": "^1.12.5",
     "regenerator-runtime": "^0.13.9"
   },
   "browserslist": [
